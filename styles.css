@@ -1,0 +1,273 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background: url('images/t1.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.header-content .btn {
+    padding: 10px 20px;
+    background: #ff7e5f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.header-content .btn:hover {
+    background: #1b1b1b;
+}
+
+
+
+.destinations, .about, .contact {
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.destinations h2, .about h2, .contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding: 0 15px 15px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+label {
+    display: block;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+button {
+    padding: 1rem 2rem;
+    background: #151616;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #646060;
+    border-radius: 5px;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+    
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .destination-cards {
+        flex-direction: column;
+    }
+}
+
+
+
+
+.nav-links {
+    display: none;
+}
+
+
+.toggle-btn {
+    display: none; 
+}
+
+@media only screen and (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: block;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(36, 34, 34, 0.8);
+       
+        z-index: 10;
+    }
+    
+
+    .nav-links.active li {
+        padding: 5px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .nav-links.active li:last-child {
+        border-bottom: none;
+    }
+}
+
+
+

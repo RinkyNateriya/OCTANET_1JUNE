@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">TravelMate</div>
+            <button class="toggle-btn" onclick="toggleMenu()">Menu</button> 
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Explore the World with TravelMate</h1>
+            <p>Your adventure starts here</p>
+            <button class="btn" onclick="scrollToSection('destinations')">Discover More</button>
+        </div>
+    </header>
+    
+
+    <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-cards">
+            <div class="card">
+
+                <img src="https://t3.ftcdn.net/jpg/02/45/68/40/360_F_245684006_e55tOria5okQtKmiLLbY30NgEHTIB0Og.jpg"
+                    alt="Destination 1" class="img-fluid">
+                <h3>Bali, Indonesia</h3>
+                <p>Experience the tropical paradise.
+                    Indonesia, is a stunning travel destination known for its beautiful beaches, vibrant culture, and
+                    lush landscapes
+                </p>
+            </div>
+            <div class="card">
+             
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Destination 2">
+                <h3>Paris, France</h3>
+                <p>The city of love and lights
+                    is one of the most iconic travel destinations in the world.
+                    The capital city of France, located in the north-central part of the country
+                </p>
+            </div>
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3lvdG98ZW58MHx8MHx8fDA%3D"
+                    alt="Destination 3">
+                <h3>Kyoto, Japan</h3>
+                <p>Discover the traditional beauty. Kyoto, Japan is renowned for its stunning temples, traditional
+                    wooden houses, and beautiful gardens
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to TravelMate, your trusted travel agency dedicated to crafting unforgettable journeys tailored just
+            for you. We believe that travel is not just about visiting new places; it's about creating lasting memories,
+            experiencing diverse cultures, and discovering the beauty of the world in unique ways.
+        </p>
+      
+
+        
+        <h2>Our Mission</h2>
+        <p>
+            At TravelMate, our mission is to provide exceptional travel experiences that cater to your individual
+            preferences and desires. We understand that every traveler is unique, and we strive to design itineraries
+            that reflect your personal tastes, interests, and budget. Whether you're seeking adventure, relaxation,
+            cultural immersion, or a mix of everything, we've got you covered.
+        </p>
+    </section>
+
+
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 TravelMate. All rights reserved.</p>
+    </footer>
+
+</body>
+
+
+</html>
